@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<h1> ศูนบริการ </h1>
+
+<h6> Welcome </h6>
+<p> กรุณาเลือกการทำรายการ </p>
+
+<button onclick=" ">ยื่นคำขอรับบริการ</button>
+<button onclick=" ">ญาติ</button>
+
+
+
+
+</body>
+</html>
