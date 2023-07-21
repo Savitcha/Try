@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>กรองข้อมูลผู้ยื่นคำร้อง</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        select {
-            width: 75%;
-            padding: 8px;
-            margin-bottom: 15px;
-        }
-        input[type="submit"] {
-            background-color: #3ab2c5;
-            color: white;
-            padding: 8px 15px;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #3ab2c5;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 75%;
+        padding: 8px;
+        margin-bottom: 15px;
+      }
+      input[type="submit"] {
+        background-color: #3ab2c5;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3ab2c5;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>กรองข้อมูลผู้ยื่นคำร้อง</h2>
     <form action="submit_customer_form.php" method="post">
-        <label for="preflex">คำนำหน้า:</label>
-        <select id="preflex" name="preflex">
-            <option value="Mr.">นาย</option>
-            <option value="Miss">นางสาว</option>
-            <option value="Ms.">นาง</option>
-           <!--เติมคำนำหน้า-->
-        </select>
-        <label for="fname">ชื่อ:</label>
-        <input type="text" id="fname" name="fname" required>
-        <label for="lname">สกุล:</label>
-        <input type="text" id="lname" name="lname" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="preflex">คำนำหน้า:</label>
+      <select id="preflex" name="preflex">
+        <option value="Mr.">นาย</option>
+        <option value="Miss">นางสาว</option>
+        <option value="Ms.">นาง</option>
+        <!--เติมคำนำหน้า-->
+      </select>
+      <label for="fname">ชื่อ:</label>
+      <input type="text" id="fname" name="fname" required />
+      <label for="lname">สกุล:</label>
+      <input type="text" id="lname" name="lname" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="phone">เบอร์ติดต่อ:</label>
-        <input type="text" id="phone" name="phone" required>
+      <label for="phone">เบอร์ติดต่อ:</label>
+      <input type="text" id="phone" name="phone" required />
 
-        <label for="address">ที่อยู่:</label>
-        <input type="text" id="address" name="address">
+      <label for="address">ที่อยู่:</label>
+      <input type="text" id="address" name="address" />
 
-        <label for="province">จังหวัด:</label>
-        <input type="text" id="province" name="province">
+      <label for="province">จังหวัด:</label>
+      <input type="text" id="province" name="province" />
 
-        <label for="pinaddress">รหัสไปรษ:</label>
-        <input type="text" id="country" name="country">
+      <label for="pinaddress">รหัสไปรษ:</label>
+      <input type="text" id="country" name="country" />
 
-        <label for="country">ประเทศ:</label>
-        <input type="text" id="country" name="country">
+      <label for="country">ประเทศ:</label>
+      <input type="text" id="country" name="country" />
 
-    
-        <input type="submit" value="Submit">
+      <input type="submit" value="Submit" />
     </form>
-</body>
+  </body>
 </html>
