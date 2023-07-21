@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ฟอร์มข้อมูลลูกค้า</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #00d0ff;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      input[type="submit"] {
+        background-color: #4c90af;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #4c90af;
+      }
+    </style>
+     
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             text-align: center;
+             margin-top: 50px;
+         }
+         .google-button {
+             background-color: #4285f4;
+             color: #ffffff;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 5px;
+             font-size: 16px;
+             cursor: pointer;
+             text-decoration: none;
+         }
+         .google-button:hover {
+             background-color: #357ae8;
+         }
+     </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>ข้อมูลลูกค้า</h2>
+      <form action="submit_customer_form.php" method="post">
+
+        <label for="preflex">คำนำหน้า:</label>
+        <select id="preflex" name="preflex">
+        <option value="Mr.">นาย</option>
+        <option value="Miss">นางสาว</option>
+        <option value="Ms.">นาง</option>
+        <!--เติมคำนำหน้า-->
+        
+        </select>
+        <label for="name">ชื่อ-นามสกุล:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">โทรศัพท์:</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="address">ที่อยู่:</label>
+        <input type="text" id="address" name="address" />
+
+        <label for="province">จังหวัด:</label>
+        <input type="text" id="province" name="province" />
+
+        <!-- เดี๋ยวมาดู-->
+       <!-- <label for="preflex">จังหวัด:</label>
+        <select id="preflex" ยpro="preflex">
+        <option value="Mr.">นาย</option>
+        <option value="Miss">นางสาว</option>
+        <option value="Ms.">นาง</option>-->
+
+        <label for="country">ประเทศ:</label>
+        <select id="country" name="country">
+        
+
+        <label for="pinaddress">รหัสไปรษณีย์:</label>
+        <input type="text" id="pinaddress" name="pinaddress" />
+
+       
+
+        <input type="submit" value="ส่งข้อมูล" />
+      </form>
+    </div>
+    <a href="https://www.google.com/" class="google-button">ไปที่ Google</a>
+  </body>
+</html>
